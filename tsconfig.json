@@ -1,0 +1,17 @@
+{
+  "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "ignoreDeprecations": "6.0",
+    "types": ["node", "jest"],
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@domain/*": ["src/domain/*"],
+      "@infra/*": ["src/infrastructure/*"],
+      "@app/*": ["src/application/*"],
+      "@ui/*": ["src/presentation/*"]
+    }
+  }
+}
